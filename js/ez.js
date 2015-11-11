@@ -1,33 +1,47 @@
-// scraper for etalonzvezda
-
 var casper = require('casper').create({
-    pageSettings: {
-        loadImages: false
-    }
+    verbose: true,
+    logLevel: 'warning',
 });
 
-function getContent() {
-    var content = document.querySelector('#content');
-    return content.children.length;
-    content.querySelector('.hide-selector-ico').click();
-    var prices = content.querySelectorAll('.item.item-col.price');
-    return Array.prototype.map.call(prices, function(e) {
-       return e.innerText;
+
+casper.start('http://etalonzvezda.ru/flat_selector#/', function() {
+    //casper.viewport(1920, 1080);
+    this.wait(1000);
+});
+
+
+casper.then(function() {
+    this.click('.hide-selector-ico');
+    this.wait(3000);
+
+    // expanding all flats
+    var numOfFlats = this.evaluate(function() {
+        var nf = document.querySelectorAll('.item-row.item-row-common').length;
+        var expand_buttons = document.querySelectorAll('.item-set-expand .item-title-text');
+        while ( 1 == 1 ) {
+            for (var i = 0; i < expand_buttons.length; ++i) {
+                var btn = expand_buttons[i];
+                btn.click();
+            }
+            if ( nf == document.querySelectorAll('.item-row.item-row-common').length ) {
+                break;
+            } else {
+                nf = document.querySelectorAll('.item-row.item-row-common').length;
+            }
+        }
+        return nf;
     });
-}
+    casper.log('Number of flats='+numOfFlats, 'warning');
 
-casper.start('http://etalonzvezda.ru/flat_selector', function() {
-    //this.echo(this.getTitle());
-    //this.click('.hide-selector-ico');
-    this.echo('start loading');
-    prices = this.evaluate(getContent);
-    //this.echo(prices.innerText);
-    this.echo(prices);
-    //for (var i = 0; i < prices.length; ++i) {
-    //  this.echo(prices[i].innerText);
-    //}
-    //this.echo(this.fetchText("#content"));
-    //this.echo(this.fetchText(".item.item-col.price"));
+    // getting flat data
 });
 
-casper.run();
+
+casper.then(function() {
+    this.capture('/sync/ez3.png');
+});
+
+
+casper.run(function(){
+    this.exit();
+});
