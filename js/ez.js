@@ -12,7 +12,7 @@ casper.start('http://etalonzvezda.ru/flat_selector#/', function() {
 
 casper.then(function() {
     this.click('.hide-selector-ico');
-    this.wait(3000);
+    this.wait(1000);
 
     // expanding all flats
     var numOfFlats = this.evaluate(function() {
@@ -31,15 +31,52 @@ casper.then(function() {
         }
         return nf;
     });
-    casper.log('Number of flats='+numOfFlats, 'warning');
+    casper.log('Number of Flats='+numOfFlats, 'info');
 
     // getting flat data
+    //this.echo('Hello, world!');
+
+    //require('utils').dump(this.getElementInfo('.item-row.item-row-common'));
+    //this.echo(this.getElementInfo('.item-row.item-row-common').attributes['data-row-id']);
+
+    var flatData = this.evaluate(function() {
+        var flats = document.querySelectorAll('.item-row.item-row-common');
+        var output = [];
+        for (var i = 0; i < flats.length; ++i) {
+            var flat = flats[i];
+            var data = {
+                rowid: flat.attributes['data-row-id'].value,
+                building: flat.querySelector('.item.item-col.building').textContent.replace(/\s/g, ''),
+                floor: flat.querySelector('.item.item-col.floor').textContent.replace(/\s/g, ''),
+                square: flat.querySelector('.item.item-col.square').textContent.replace(/\s/g, ''),
+                price: flat.querySelector('.item.item-col.price').textContent.replace(/\s/g, ''),
+            };
+            output.push(data);
+        }
+        return output;
+    });
+    require('utils').dump({
+        dt: Date(),
+        flats: flatData,
+    });
+
+    // sandbox
+    /*
+    if (this.exists('.item-row.item-row-common')) {
+        this.echo('flat exists');
+    }
+
+    // doesn't work
+    this.evaluate(function() {
+        this.echo('Inside evaluation');
+    });
+    */
 });
 
 
-casper.then(function() {
-    this.capture('/sync/ez3.png');
-});
+//casper.then(function() {
+//    this.capture('/sync/ez3.png');
+//});
 
 
 casper.run(function(){
