@@ -46,8 +46,10 @@ casper.then(function() {
             var flat = flats[i];
             var data = {
                 rowid: flat.attributes['data-row-id'].value,
+                rooms: flat.querySelector('.item.item-col.rooms').textContent.replace(/\s/g, ''),
                 building: flat.querySelector('.item.item-col.building').textContent.replace(/\s/g, ''),
-                floor: flat.querySelector('.item.item-col.floor').textContent.replace(/\s/g, ''),
+                floor: flat.querySelector('.item.item-col.floor .current-floor').textContent.replace(/\s/g, ''),
+                height: flat.querySelector('.item.item-col.floor .max-floor').textContent.replace(/\s/g, ''),
                 square: flat.querySelector('.item.item-col.square').textContent.replace(/\s/g, ''),
                 price: flat.querySelector('.item.item-col.price').textContent.replace(/\s/g, ''),
             };
