@@ -1,14 +1,23 @@
+#!/bin/bash
+set -o errexit
+set -o nounset
+
 cd ~/Projects/etalonzvezda-scraper
 dt=`date +%Y-%m-%d`
 
-echo "Run scraper"
+echo -n "Run scraper... "
 ./run_scraper.sh > output/$dt.json
+echo "Done"
 
-echo "Removing Warning message"
+echo -n "Removing Warning message... "
 sed '1d' output/$dt.json > tmpfile; mv tmpfile output/$dt.json
+echo "Done"
 
-echo "Convert to csv"
+echo -n "Converting to csv... "
 ./to_csv.sh output/$dt.json > output/$dt.csv
+echo "Done"
 
-echo "Copying to output.csv"
+echo -n "Copying to output.csv... "
+rm output/output.csv
 cp -r output/$dt.csv output/output.csv
+echo "Done"
