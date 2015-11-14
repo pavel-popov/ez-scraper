@@ -17,6 +17,10 @@ echo -n "Converting to csv... "
 ./to_csv.sh output/$dt.json > output/$dt.csv
 echo "Done"
 
+echo -n "Converting to sql "
+./to_sql.sh output/$dt.json $dt > output/$dt.sql
+echo "Done"
+
 echo -n "Copying to output.csv... "
 rm output/output.csv
 cp -r output/$dt.csv output/output.csv
