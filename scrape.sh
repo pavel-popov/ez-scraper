@@ -22,6 +22,8 @@ echo -n "Converting to sql "
 echo "Done"
 
 echo -n "Copying to output.csv... "
-rm output/output.csv
+if [ -f output/output.csv ]; then
+  rm output/output.csv
+fi
 cp -r output/$dt.csv output/output.csv
 echo "Done"
