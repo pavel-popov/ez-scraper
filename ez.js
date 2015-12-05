@@ -3,6 +3,8 @@ var casper = require('casper').create({
     logLevel: 'warning',
 });
 
+var building = casper.cli.get("building");
+casper.log("Target building is "+building, 'info');
 
 casper.start('http://etalonzvezda.ru/flat_selector#/', function() {
     //casper.viewport(1920, 1080);
@@ -10,27 +12,43 @@ casper.start('http://etalonzvezda.ru/flat_selector#/', function() {
 });
 
 
+casper.on('remote.message', function(msg) {
+    casper.log('Receive console.log message: '+msg, 'debug');
+});
+
+
 casper.then(function() {
     this.click('.hide-selector-ico');
     this.wait(1000);
+    casper.log('After click on .hide-selector-ico', 'debug');
+    casper.log('Target building is still'+building, 'debug');
 
     // expanding all flats
-    var numOfFlats = this.evaluate(function() {
+    var numOfFlats = this.evaluate(function(building) {
+        console.log('Evaluating number of flats');
         var nf = document.querySelectorAll('.item-row.item-row-common').length;
         var expand_buttons = document.querySelectorAll('.item-set-expand .item-title-text');
+        console.log('There are '+expand_buttons.length+' expand buttons');
         while ( 1 == 1 ) {
             for (var i = 0; i < expand_buttons.length; ++i) {
-                var btn = expand_buttons[i];
-                btn.click();
+                if (i==building) {
+                    var btn = expand_buttons[i];
+                    btn.click();
+                    console.log('Click on '+i+'th expand button');
+                }
             }
             if ( nf == document.querySelectorAll('.item-row.item-row-common').length ) {
+                console.log('All flats expanded, stop clicking on expand buttons');
                 break;
             } else {
                 nf = document.querySelectorAll('.item-row.item-row-common').length;
+                console.log('Go click one more time');
+                console.log('Current number of flats='+nf);
             }
         }
+        //this.log('Returning number of flats', 'debug');
         return nf;
-    });
+    }, building);
     casper.log('Number of Flats='+numOfFlats, 'info');
 
     // getting flat data
@@ -39,7 +57,7 @@ casper.then(function() {
     //require('utils').dump(this.getElementInfo('.item-row.item-row-common'));
     //this.echo(this.getElementInfo('.item-row.item-row-common').attributes['data-row-id']);
 
-    var flatData = this.evaluate(function() {
+    var flatData = this.evaluate(function(building) {
         var flats = document.querySelectorAll('.item-row.item-row-common');
         var output = [];
         for (var i = 0; i < flats.length; ++i) {
@@ -53,10 +71,12 @@ casper.then(function() {
                 square: flat.querySelector('.item.item-col.square').textContent.replace(/\s/g, ''),
                 price: flat.querySelector('.item.item-col.price').textContent.replace(/\s/g, ''),
             };
-            output.push(data);
+            if (data.building === building.toString()) {
+                output.push(data);
+            }
         }
         return output;
-    });
+    }, building+1);
     require('utils').dump({
         dt: Date(),
         flats: flatData,
