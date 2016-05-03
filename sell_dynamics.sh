@@ -1,8 +1,7 @@
-
 IFS=$'\n'
 for row in $(git lol)
 do
     commit=$(echo $row | cut -f2 -d" ")
-    num_flats=$(git show $commit:output/output.csv | wc -l)
-    printf "$row\t\t\t\t\t\t$num_flats\n"
+    num_flats=$(git show $commit:output/output.csv 2> /dev/null | wc -l)
+    printf "%80s %d\n" "$row" $num_flats
 done
