@@ -1,0 +1,23 @@
+{
+    "dt": "Sun Nov 27 2016 19:26:00 GMT+0000 (UTC)",
+    "flats": [
+        {
+            "building": "7",
+            "floor": "2",
+            "height": "6",
+            "price": "8031300",
+            "rooms": "1комн.",
+            "rowid": "7-5",
+            "square": "43.2"
+        },
+        {
+            "building": "7",
+            "floor": "2",
+            "height": "6",
+            "price": "13330300",
+            "rooms": "3комн.",
+            "rowid": "7-1",
+            "square": "75.52"
+        }
+    ]
+}
