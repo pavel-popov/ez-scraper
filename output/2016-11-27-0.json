@@ -1,0 +1,761 @@
+{
+    "dt": "Sun Nov 27 2016 19:17:45 GMT+0000 (UTC)",
+    "flats": [
+        {
+            "building": "1",
+            "floor": "3",
+            "height": "32",
+            "price": "6360000",
+            "rooms": "1комн.",
+            "rowid": "1-3",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "24",
+            "height": "32",
+            "price": "6739100",
+            "rooms": "1комн.",
+            "rowid": "1-123",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "24",
+            "height": "32",
+            "price": "6796800",
+            "rooms": "1комн.",
+            "rowid": "1-122",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "24",
+            "height": "32",
+            "price": "6798500",
+            "rooms": "1комн.",
+            "rowid": "1-125",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "25",
+            "height": "32",
+            "price": "6840500",
+            "rooms": "1комн.",
+            "rowid": "1-129",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "25",
+            "height": "32",
+            "price": "6899100",
+            "rooms": "1комн.",
+            "rowid": "1-128",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "25",
+            "height": "32",
+            "price": "6900800",
+            "rooms": "1комн.",
+            "rowid": "1-131",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "26",
+            "height": "32",
+            "price": "6944400",
+            "rooms": "1комн.",
+            "rowid": "1-135",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "26",
+            "height": "32",
+            "price": "7003900",
+            "rooms": "1комн.",
+            "rowid": "1-134",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "26",
+            "height": "32",
+            "price": "7005600",
+            "rooms": "1комн.",
+            "rowid": "1-137",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "27",
+            "height": "32",
+            "price": "7028800",
+            "rooms": "1комн.",
+            "rowid": "1-141",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "27",
+            "height": "32",
+            "price": "7089100",
+            "rooms": "1комн.",
+            "rowid": "1-140",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "27",
+            "height": "32",
+            "price": "7090800",
+            "rooms": "1комн.",
+            "rowid": "1-143",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "28",
+            "height": "32",
+            "price": "7103600",
+            "rooms": "1комн.",
+            "rowid": "1-147",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "28",
+            "height": "32",
+            "price": "7164400",
+            "rooms": "1комн.",
+            "rowid": "1-146",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "28",
+            "height": "32",
+            "price": "7166200",
+            "rooms": "1комн.",
+            "rowid": "1-149",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "29",
+            "height": "32",
+            "price": "7178300",
+            "rooms": "1комн.",
+            "rowid": "1-153",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "29",
+            "height": "32",
+            "price": "7239800",
+            "rooms": "1комн.",
+            "rowid": "1-152",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "29",
+            "height": "32",
+            "price": "7241600",
+            "rooms": "1комн.",
+            "rowid": "1-155",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "30",
+            "height": "32",
+            "price": "7253100",
+            "rooms": "1комн.",
+            "rowid": "1-159",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "30",
+            "height": "32",
+            "price": "7315200",
+            "rooms": "1комн.",
+            "rowid": "1-158",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "30",
+            "height": "32",
+            "price": "7317000",
+            "rooms": "1комн.",
+            "rowid": "1-161",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "31",
+            "height": "32",
+            "price": "7327800",
+            "rooms": "1комн.",
+            "rowid": "1-165",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "31",
+            "height": "32",
+            "price": "7390600",
+            "rooms": "1комн.",
+            "rowid": "1-164",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "31",
+            "height": "32",
+            "price": "7392400",
+            "rooms": "1комн.",
+            "rowid": "1-167",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "32",
+            "height": "32",
+            "price": "7423900",
+            "rooms": "1комн.",
+            "rowid": "1-171",
+            "square": "39.69"
+        },
+        {
+            "building": "1",
+            "floor": "32",
+            "height": "32",
+            "price": "7487500",
+            "rooms": "1комн.",
+            "rowid": "1-170",
+            "square": "40.03"
+        },
+        {
+            "building": "1",
+            "floor": "32",
+            "height": "32",
+            "price": "7489400",
+            "rooms": "1комн.",
+            "rowid": "1-173",
+            "square": "40.04"
+        },
+        {
+            "building": "1",
+            "floor": "3",
+            "height": "32",
+            "price": "9244600",
+            "rooms": "2комн.",
+            "rowid": "1-4",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "6",
+            "height": "32",
+            "price": "9248500",
+            "rooms": "2комн.",
+            "rowid": "1-22",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "4",
+            "height": "32",
+            "price": "9248500",
+            "rooms": "2комн.",
+            "rowid": "1-10",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "7",
+            "height": "32",
+            "price": "9248500",
+            "rooms": "2комн.",
+            "rowid": "1-28",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "5",
+            "height": "32",
+            "price": "9248500",
+            "rooms": "2комн.",
+            "rowid": "1-16",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "8",
+            "height": "32",
+            "price": "9267500",
+            "rooms": "2комн.",
+            "rowid": "1-34",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "3",
+            "height": "32",
+            "price": "9287600",
+            "rooms": "2комн.",
+            "rowid": "1-5",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "7",
+            "height": "32",
+            "price": "9291500",
+            "rooms": "2комн.",
+            "rowid": "1-29",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "4",
+            "height": "32",
+            "price": "9291500",
+            "rooms": "2комн.",
+            "rowid": "1-11",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "5",
+            "height": "32",
+            "price": "9291500",
+            "rooms": "2комн.",
+            "rowid": "1-17",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "6",
+            "height": "32",
+            "price": "9291500",
+            "rooms": "2комн.",
+            "rowid": "1-23",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "12",
+            "height": "32",
+            "price": "9366700",
+            "rooms": "2комн.",
+            "rowid": "1-58",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "14",
+            "height": "32",
+            "price": "9377300",
+            "rooms": "2комн.",
+            "rowid": "1-70",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "11",
+            "height": "32",
+            "price": "9406400",
+            "rooms": "2комн.",
+            "rowid": "1-53",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "13",
+            "height": "32",
+            "price": "9414800",
+            "rooms": "2комн.",
+            "rowid": "1-65",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "14",
+            "height": "32",
+            "price": "9420900",
+            "rooms": "2комн.",
+            "rowid": "1-71",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "16",
+            "height": "32",
+            "price": "9430900",
+            "rooms": "2комн.",
+            "rowid": "1-83",
+            "square": "62.65"
+        },
+        {
+            "building": "1",
+            "floor": "17",
+            "height": "32",
+            "price": "9442100",
+            "rooms": "2комн.",
+            "rowid": "1-88",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "19",
+            "height": "32",
+            "price": "9460400",
+            "rooms": "2комн.",
+            "rowid": "1-94",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "3",
+            "height": "32",
+            "price": "9714600",
+            "rooms": "2комн.",
+            "rowid": "1-2",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "7",
+            "height": "32",
+            "price": "9718600",
+            "rooms": "2комн.",
+            "rowid": "1-26",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "5",
+            "height": "32",
+            "price": "9718600",
+            "rooms": "2комн.",
+            "rowid": "1-14",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "4",
+            "height": "32",
+            "price": "9718600",
+            "rooms": "2комн.",
+            "rowid": "1-8",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "6",
+            "height": "32",
+            "price": "9718600",
+            "rooms": "2комн.",
+            "rowid": "1-20",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "23",
+            "height": "32",
+            "price": "9719000",
+            "rooms": "2комн.",
+            "rowid": "1-118",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "8",
+            "height": "32",
+            "price": "9738600",
+            "rooms": "2комн.",
+            "rowid": "1-32",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "9",
+            "height": "32",
+            "price": "9740200",
+            "rooms": "2комн.",
+            "rowid": "1-38",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "10",
+            "height": "32",
+            "price": "9834800",
+            "rooms": "2комн.",
+            "rowid": "1-44",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "11",
+            "height": "32",
+            "price": "9838800",
+            "rooms": "2комн.",
+            "rowid": "1-50",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "24",
+            "height": "32",
+            "price": "9840200",
+            "rooms": "2комн.",
+            "rowid": "1-124",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "12",
+            "height": "32",
+            "price": "9842800",
+            "rooms": "2комн.",
+            "rowid": "1-56",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "13",
+            "height": "32",
+            "price": "9847600",
+            "rooms": "2комн.",
+            "rowid": "1-62",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "15",
+            "height": "32",
+            "price": "9860400",
+            "rooms": "2комн.",
+            "rowid": "1-74",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "16",
+            "height": "32",
+            "price": "9864400",
+            "rooms": "2комн.",
+            "rowid": "1-80",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "17",
+            "height": "32",
+            "price": "9922100",
+            "rooms": "2комн.",
+            "rowid": "1-86",
+            "square": "65.53"
+        },
+        {
+            "building": "1",
+            "floor": "26",
+            "height": "32",
+            "price": "10162800",
+            "rooms": "2комн.",
+            "rowid": "1-136",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "27",
+            "height": "32",
+            "price": "10295500",
+            "rooms": "2комн.",
+            "rowid": "1-142",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "28",
+            "height": "32",
+            "price": "10412900",
+            "rooms": "2комн.",
+            "rowid": "1-148",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "29",
+            "height": "32",
+            "price": "10530300",
+            "rooms": "2комн.",
+            "rowid": "1-154",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "30",
+            "height": "32",
+            "price": "10647800",
+            "rooms": "2комн.",
+            "rowid": "1-160",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "31",
+            "height": "32",
+            "price": "10765200",
+            "rooms": "2комн.",
+            "rowid": "1-166",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "32",
+            "height": "32",
+            "price": "10916200",
+            "rooms": "2комн.",
+            "rowid": "1-172",
+            "square": "62.36"
+        },
+        {
+            "building": "1",
+            "floor": "3",
+            "height": "32",
+            "price": "12482500",
+            "rooms": "3комн.",
+            "rowid": "1-6",
+            "square": "86.83"
+        },
+        {
+            "building": "1",
+            "floor": "4",
+            "height": "32",
+            "price": "12487900",
+            "rooms": "3комн.",
+            "rowid": "1-12",
+            "square": "86.83"
+        },
+        {
+            "building": "1",
+            "floor": "13",
+            "height": "32",
+            "price": "12711900",
+            "rooms": "3комн.",
+            "rowid": "1-66",
+            "square": "86.83"
+        },
+        {
+            "building": "1",
+            "floor": "26",
+            "height": "32",
+            "price": "15717500",
+            "rooms": "4комн.",
+            "rowid": "1-133",
+            "square": "101.67"
+        },
+        {
+            "building": "1",
+            "floor": "27",
+            "height": "32",
+            "price": "15933800",
+            "rooms": "4комн.",
+            "rowid": "1-139",
+            "square": "101.67"
+        },
+        {
+            "building": "1",
+            "floor": "28",
+            "height": "32",
+            "price": "16125300",
+            "rooms": "4комн.",
+            "rowid": "1-145",
+            "square": "101.67"
+        },
+        {
+            "building": "1",
+            "floor": "29",
+            "height": "32",
+            "price": "16316700",
+            "rooms": "4комн.",
+            "rowid": "1-151",
+            "square": "101.67"
+        },
+        {
+            "building": "1",
+            "floor": "30",
+            "height": "32",
+            "price": "16508200",
+            "rooms": "4комн.",
+            "rowid": "1-157",
+            "square": "101.67"
+        },
+        {
+            "building": "1",
+            "floor": "31",
+            "height": "32",
+            "price": "16699700",
+            "rooms": "4комн.",
+            "rowid": "1-163",
+            "square": "101.67"
+        },
+        {
+            "building": "1",
+            "floor": "32",
+            "height": "32",
+            "price": "16945800",
+            "rooms": "4комн.",
+            "rowid": "1-169",
+            "square": "101.67"
+        },
+        {
+            "building": "1",
+            "floor": "29",
+            "height": "32",
+            "price": "17098300",
+            "rooms": "4комн.",
+            "rowid": "1-156",
+            "square": "106.54"
+        },
+        {
+            "building": "1",
+            "floor": "30",
+            "height": "32",
+            "price": "17298900",
+            "rooms": "4комн.",
+            "rowid": "1-162",
+            "square": "106.54"
+        },
+        {
+            "building": "1",
+            "floor": "31",
+            "height": "32",
+            "price": "17499600",
+            "rooms": "4комн.",
+            "rowid": "1-168",
+            "square": "106.54"
+        },
+        {
+            "building": "1",
+            "floor": "32",
+            "height": "32",
+            "price": "17757500",
+            "rooms": "4комн.",
+            "rowid": "1-174",
+            "square": "106.54"
+        }
+    ]
+}
