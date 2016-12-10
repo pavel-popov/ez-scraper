@@ -1,10 +1,12 @@
 var casper = require('casper').create({
     verbose: true,
-    logLevel: 'warning',
+    logLevel: 'debug',
 });
 
-var building = casper.cli.get("building");
-casper.log("Target building is "+building, 'info');
+var fs = require('fs');
+
+var outputFile = casper.cli.get("output");
+casper.log("Output file is "+outputFile, 'info');
 
 casper.start('http://etalonzvezda.ru/flat_selector#/', function() {
     //casper.viewport(1920, 1080);
@@ -21,21 +23,18 @@ casper.then(function() {
     this.click('.hide-selector-ico');
     this.wait(1000);
     casper.log('After click on .hide-selector-ico', 'debug');
-    casper.log('Target building is still'+building, 'debug');
 
     // expanding all flats
-    var numOfFlats = this.evaluate(function(building) {
+    var numOfFlats = this.evaluate(function() {
         console.log('Evaluating number of flats');
         var nf = document.querySelectorAll('.item-row.item-row-common').length;
         var expand_buttons = document.querySelectorAll('.item-set-expand .item-title-text');
         console.log('There are '+expand_buttons.length+' expand buttons');
         while ( 1 == 1 ) {
             for (var i = 0; i < expand_buttons.length; ++i) {
-                if (i==building) {
-                    var btn = expand_buttons[i];
-                    btn.click();
-                    console.log('Click on '+i+'th expand button');
-                }
+                var btn = expand_buttons[i];
+                btn.click();
+                console.log('Click on '+i+'th expand button');
             }
             if ( nf == document.querySelectorAll('.item-row.item-row-common').length ) {
                 console.log('All flats expanded, stop clicking on expand buttons');
@@ -48,7 +47,7 @@ casper.then(function() {
         }
         //this.log('Returning number of flats', 'debug');
         return nf;
-    }, building);
+    });
     casper.log('Number of Flats='+numOfFlats, 'info');
 
     // getting flat data
@@ -57,10 +56,11 @@ casper.then(function() {
     //require('utils').dump(this.getElementInfo('.item-row.item-row-common'));
     //this.echo(this.getElementInfo('.item-row.item-row-common').attributes['data-row-id']);
 
-    var flatData = this.evaluate(function(building) {
+    var flats = this.evaluate(function() {
         var flats = document.querySelectorAll('.item-row.item-row-common');
         var output = [];
         for (var i = 0; i < flats.length; ++i) {
+            console.log('iterating through flats, iteration '+i);
             var flat = flats[i];
             var data = {
                 rowid: flat.attributes['data-row-id'].value,
@@ -71,16 +71,20 @@ casper.then(function() {
                 square: flat.querySelector('.item.item-col.square').textContent.replace(/\s/g, ''),
                 price: flat.querySelector('.item.item-col.price').textContent.replace(/\s/g, ''),
             };
-            if (data.building === building.toString()) {
-                output.push(data);
-            }
+            output.push(data);
         }
         return output;
-    }, building+1);
-    require('utils').dump({
-        dt: Date(),
-        flats: flatData,
     });
+
+    casper.log('writing output file '+outputFile, 'info');
+    var output = {
+        dt: Date(),
+        flats: flats,
+    }
+
+    fs.write(outputFile, require('utils').serialize(output), 'w');
+    casper.log('output file '+outputFile+' is written', 'info');
+    //require('utils').dump(output);
 
     // sandbox
     /*
