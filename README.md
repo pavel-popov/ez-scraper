@@ -6,3 +6,7 @@ To run scraping use `$ ./scrape.sh`.
 
 * docker
 * jq
+
+## Running
+
+    ./scrape.sh
