@@ -9,7 +9,7 @@ echo "Run scraper..."
 echo "Done"
 
 echo -n "Converting to csv... "
-echo "building,floor,height,rooms,rowid,square,price" > output/$dt.csv
+echo "rowid,building,floor,height,rooms,square,price" > output/$dt.csv
 ./to_csv.sh output/$dt.json >> output/$dt.csv
 echo "Done"
 
