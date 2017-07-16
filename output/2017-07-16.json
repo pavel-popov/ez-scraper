@@ -1,0 +1,41 @@
+{
+  "dt": "Sun Jul 16 2017 06:23:40 GMT+0000 (UTC)",
+  "flats": [
+    {
+      "building": "3",
+      "floor": "24",
+      "height": "32",
+      "price": "11112800",
+      "rooms": "2комн.",
+      "rowid": "3-160",
+      "square": "69.36"
+    },
+    {
+      "building": "3",
+      "floor": "6",
+      "height": "32",
+      "price": "13817400",
+      "rooms": "3комн.",
+      "rowid": "3-31",
+      "square": "88.11"
+    },
+    {
+      "building": "5",
+      "floor": "3",
+      "height": "23",
+      "price": "6199400",
+      "rooms": "1комн.",
+      "rowid": "5-9",
+      "square": "37.43"
+    },
+    {
+      "building": "5",
+      "floor": "14",
+      "height": "23",
+      "price": "6724600",
+      "rooms": "1комн.",
+      "rowid": "5-98",
+      "square": "40.46"
+    }
+  ]
+}
