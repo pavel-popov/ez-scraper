@@ -1,3 +1,4 @@
+#!/bin/bash
 IFS=$'\n'
 for row in $(git lol)
 do
